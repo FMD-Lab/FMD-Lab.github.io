@@ -53,7 +53,13 @@ h3{
  padding: 0px;
 }
 
-
+h5{
+	font: normal 100% Arial,SimHei,sans-serif;
+	color: #000000;
+	margin: 10px;
+	margin-left: 0px;
+	padding: 0px;
+   }
 
 /***********************************************/
 /* Layout Divs                                 */
@@ -158,6 +164,15 @@ li{
 	padding:0px;
 } 
 
+ol{
+	list-style-type: none;
+	counter-reset: olli;
+}
+ol li:before{
+	content: "["counter(olli)"]. ";
+	counter-increment: olli;
+}
+
 p {
 	margin: 10px;
 	margin-left: 10px;
@@ -165,6 +180,7 @@ p {
 	padding: 10px 0px 0px 0px;
 	font-size: 100%;
 	line-height:150%;
+	text-indent:2em;
 }
 
 
